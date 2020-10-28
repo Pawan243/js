@@ -1,0 +1,60 @@
+<!--JavaScript - Print All Links (Hyperlinks) with HREF Attribute, Total Number of Links in a Page.-->
+<html>
+
+<head>
+    <title>JavaScript - Print All Links (Hyperlinks) with HREF Attribute, Total Number of Links in a Page.</title>
+    <!--Example CSS-->
+    <link href="ExampleStyle.css" type="text/css" rel="stylesheet" />
+
+    <script type="text/javascript">
+        function getTotalLinks() {
+            var n = document.links.length;
+
+            document.getElementById("pLinks").innerHTML = "Total number of links: " + n;
+            
+        }
+
+        function jsLinks() {
+            const str = 'javascript';
+            let a = document.links;
+            let len = a.length;
+            for (let i = 0; i < len; i++) {
+                let val = document.links[i].href;
+                if (val.includes(str)) {
+                    //console.log(val);
+                    document.getElementById("pLinkstr").innerHTML =
+                    "Link which is containing javascript string : " + document.links[i].innerHTML +
+                    " is linked to: " + val  + "<br/>";
+                }
+
+            }
+        }
+
+        function printAllLinks() {
+            var totalLinks = document.links.length;
+            document.getElementById("pLinks").innerHTML = "";
+            for (var i = 0; i < totalLinks; i++) {
+                document.getElementById("pLinks").innerHTML +=
+                    "Link: " + document.links[i].innerHTML +
+                    " is linked to: " + document.links[i].href + "<br/>";
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <h1>JavaScript - Print All Links (Hyperlinks) with HREF Attribute, Total Number of Links in a Page and print all the links href which contains given javascript string.</h1>
+    <p>
+        <a href="www.wikihow.com">WikiHow</a>
+        <a href="www.wikipedia.org">wikiPedia</a>
+        <a href="https://www.javascript.com"></a>
+        <a href="https://www.w3schools.com/js/DEFAULT.asp"></a>
+    </p>
+    <input type="button" value="Get total links." onclick='getTotalLinks()' />
+    <input type="button" value="Print All Links." onclick='printAllLinks()' />
+    <input type="button" value="js links" onclick='jsLinks()' />
+    <p id="pLinks"></p>
+    <p id="pLinkstr"></p>
+</body>
+
+</html>
