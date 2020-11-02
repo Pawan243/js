@@ -35,5 +35,5 @@ elem2.removeAttribute('id');
 elem2.setAttribute('title', 'myelementtitle');
 
 console.log(elem2)
-
+// Quiz to add in next test
 //create a heading element with text as 'go to google' and create an a tag ouside it with "google.com"
