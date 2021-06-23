@@ -10,7 +10,7 @@ html = html.concat('in html', 'and html5')
 // console.log(html)
 // console.log(html.length);
 // console.log(html.toLowerCase());
-// console.log(html.touPPERCase());
+// console.log(html.toUpperCase());
 // console.log(html);
 
 // console.log(html[5])
