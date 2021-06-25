@@ -11,18 +11,18 @@ console.log('This is 8th test in the series of javascript learning.')
 // }
 
 
-console.log(age = 19 ? 'Age is 19' : 'Age is not 19')
+console.log(age == 19 ? 'Age is 19' : 'Age is not 19')
 
 switch (age) {
     case 32:
-        console.log('age is not 32')
+        console.log('age is 32')
         break;
 
     case 25:
-        console.log('age is not 25')
+        console.log('age is 25')
         break;
     case 89:
-        console.log('age is not 89')
+        console.log('age is 89')
         break;
 
     default:
